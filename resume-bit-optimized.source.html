@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
@@ -136,7 +136,7 @@
         --title-size: clamp(1.25rem, 3.8vw, 2.2rem);
         --h2-size: clamp(0.95rem, 2.4vw, 1.55rem);
       }
-      .nav-dots, .keyboard-hint, .decorative {
+      .nav-dots, .decorative {
         display: none;
       }
     }
@@ -1030,20 +1030,6 @@
       border-color: var(--bit-brown);
     }
 
-    .keyboard-hint {
-      position: fixed;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 12px;
-      z-index: 85;
-      color: rgba(23,33,31,.68);
-      font-size: var(--small-size);
-      background: rgba(255,255,255,.65);
-      border: 1px solid rgba(11,95,74,.12);
-      padding: .35rem .55rem;
-    }
-
-
     .reveal {
       opacity: 0;
       transform: translateY(24px);
@@ -1067,9 +1053,7 @@
 <body>
   <div class="progress-bar" aria-hidden="true"></div>
 <nav class="nav-dots" aria-label="幻灯片导航"></nav>
-  <div class="keyboard-hint">方向键 / 空格 / 滚轮切换页面</div>
-
-  <section class="slide cover" data-title="封面">
+<section class="slide cover" data-title="封面">
     <div class="slide-content">
       <aside class="side">
         <div>
